@@ -35,4 +35,4 @@ EXPOSE 32400
 RUN sed -i '2i rm -rf /config/Library/Application\\ Support/Plex\\ Media\\ Server/plexmediaserver.pid' ${PLEX_PATH}/Resources/start.sh
 
 WORKDIR ${PLEX_PATH}
-CMD ["bash", "start.sh"]
+CMD ["bash", "Resources/start.sh"]
